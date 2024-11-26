@@ -50,10 +50,3 @@ def draw_dot(root: Value):
         dot.edge(str(id(n1)), str(id(n2)) + n2._op)
     
     return dot
-
-a = Value(2.0)
-b = Value(3.0)
-c = a * b
-print(c)
-draw_dot(c).render("graph", view=True, format="svg")
-
